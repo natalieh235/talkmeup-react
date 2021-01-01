@@ -49,7 +49,7 @@ export default function SearchMatrix(props) {
                 {videos.map(video => {
                     return (
                         <div className='container'>
-                            <iframe className='video' width="420" height="315" id={`${video.id.videoId}-vid`}
+                            <iframe className='video' id={`${video.id.videoId}-vid`}
                             src={`https://www.youtube.com/embed/${video.id.videoId}`} data-link={`https://www.youtube.com/watch?v=${video.id.videoId}`}>
                             </iframe>
                             <div className='vid-overlay'>
